@@ -1,0 +1,22 @@
+# banking.kv
+
+<BankingBoxLayout>:
+    orientation: 'vertical'
+    spacing: 10
+    padding: 10
+
+    Label:
+        text: "Account Owner: Blerta Sefaj"
+    Label:
+        text: "Balance: $500.0"
+
+    Spinner:
+        text: 'Select Action'
+        values: ['Deposit', 'Withdraw']
+
+    TextInput:
+        hint_text: 'Enter Amount'
+        input_type: 'number'
+
+    Button:
+        text: 'Perform Action'
